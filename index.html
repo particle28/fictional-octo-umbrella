@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<select id ="opt">
+		<option>Addition</option>
+		<option>Subtraction</option>
+		<option>Multiplication</option>
+		<option>Divsion</option>
+	</select>
+
+	<input type="text" id="num1">
+	<input type="text" id="num2">
+	<button id="btn" onclick="total()">Go, Cry Go!</button>
+
+<h1 id="tot"></h1>
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+	function total() {
+		var num1 = parseFloat(document.getElementById('num1').value);
+		var num2 = parseFloat(document.getElementById('num2').value);
+		var opt = document.getElementById('opt').value;
+				if (opt == "Addition" ) {
+					var gtotal = (num1 + num2);
+					var tot = document.getElementById('tot');
+					tot.innerHTML = gtotal;
+				}
+
+				if (opt == "Subtraction" ) {
+					var gtotal = (num1 - num2);
+					var tot = document.getElementById('tot');
+					tot.innerHTML = gtotal;
+				}
+
+				if (opt == "Multiplication" ) {
+					var gtotal = (num1 * num2);
+					var tot = document.getElementById('tot');
+					tot.innerHTML = gtotal;
+				}
+
+				if (opt == "Divsion" ) {
+					var gtotal = (num1 / num2);
+					var tot = document.getElementById('tot');
+					tot.innerHTML = gtotal;
+				}
+
+		
+
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+	/*function varia() {
+	function hello() {
+		alert("Welcome to javascript");
+	}
+		var nm =  document.getElementbyId('#nnm').val();
+		var aa = nm.val();
+		alert(aa);
+	}*/
+
+
+	/*var i = 2;
+	var m = 3;
+	var mm = i + m;
+	alert(mm);
+	//var jj = document.getElementbyId('hh');
+	//jj.innerHTML = mm;*/
+
+	/*<input type="text" name="ainz" id="nnm">
+	<button onclick="varia()">Click for box</button>
+
+	<button onclick="hello()">Click for pop</button>
+
+	<h1 id="hh"></h1>
+	*/
+
+
+
+
+
+</script>
